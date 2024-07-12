@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "side main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.navbar {
+    background-color: teal;
+    color: white;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 10px 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar .book {
+    margin-right: auto;
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+.sidebar {
+    background-color: rgb(232, 232, 232);
+    grid-area: side;
+    
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.main {
+    background-color: white;
+    grid-area: main;
+}
+
+.footer {
+    background-color: rgb(1, 86, 86);
+    grid-area: footer;
+}
+
+.footer p {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.bookCover {
+    padding: 20px;
+}
